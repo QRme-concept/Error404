@@ -58,4 +58,52 @@
     font-weight: bold;
     font-size: 22px;
     display: flex;
-    align-
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    padding: 10px 12px;
+  }
+
+  .win-btn {
+    background: #c0c0c0;
+    border: 2px solid #fff;
+    border-right-color: #808080;
+    border-bottom-color: #808080;
+    padding: 2px 10px;
+    font-size: 13px;
+    cursor: pointer;
+  }
+
+  .win-btn:active {
+    border: 2px solid #808080;
+    border-right-color: #fff;
+    border-bottom-color: #fff;
+  }
+</style>
+</head>
+<body>
+  <div class="win98-box">
+    <div class="titlebar">
+      System Message
+      <button>×</button>
+    </div>
+    <div class="content">
+      <div class="icon">×</div>
+      <div>
+        <p><strong>Ошибка 404 — Страница не найдена</strong></p>
+        <p>Сервер не отвечает. Запрашиваемый ресурс отсутствует или недоступен.</p>
+      </div>
+    </div>
+    <div class="buttons">
+      <button class="win-btn">Закрыть</button>
+      <button class="win-btn">Сведения &gt;&gt;</button>
+    </div>
+  </div>
+</body>
+</html>
